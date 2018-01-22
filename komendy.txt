@@ -1,4 +1,2 @@
 autoprefixer-cli -o style.css style.prefixed.css
-batch.on('end', function (err) {
-if (err) console.error(err.stack);
-})
+node_modules/.bin/nu-html-checker *html 
