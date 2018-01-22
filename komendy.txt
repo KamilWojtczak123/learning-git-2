@@ -1,4 +1,7 @@
 autoprefixer-cli -o style.css style.prefixed.css
-batch.on('end', function (err) {
-if (err) console.error(err.stack);
-})
+cli [options] <files/urls ...>
+Options:
+ 
+    -h, --help                   output usage information
+    -V, --version                output the version number
+    -f, --formatter <formatter>  Choose the formatter to use. (stylish, json)
