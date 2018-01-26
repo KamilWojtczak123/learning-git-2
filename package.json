@@ -6,11 +6,11 @@
   "scripts": {
     "test": "npm run test:html",
     "test:html": "globstar nu-html-checker *.html",
-    
+    "build": "npm run build:clean && npm run build:scss",
     "build:clean": "rm /css",
-      "build:scss": "node-sass --output-style compact -o css sass",
-      
-    "watch:*": "watch:browsersync"
+    "build:scss": "node-sass --output-style compact -o css sass",
+    "watch": "npm-run-all watch:*",
+    "watch:browsersync": "browser-sync --server --files css/* *.html"
   },
   "repository": {
     "type": "git",
