@@ -7,10 +7,10 @@
     "test": "npm run test:html",
     "test:html": "globstar nu-html-checker *.html",
     
-    "build:clean": "npm rm rimraf /vendor",
+    "build:clean": "rm /css",
       "build:scss": "node-sass --output-style compact -o css sass",
       
-    "watch-browsersync": "npm-run-all build -p watch:browsersync"
+    "watch:*": "watch:browsersync"
   },
   "repository": {
     "type": "git",
